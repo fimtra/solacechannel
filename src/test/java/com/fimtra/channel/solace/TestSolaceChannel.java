@@ -191,6 +191,8 @@ public class TestSolaceChannel
         this.channel1.destroy("unit test shutdown");
         assertTrue("Did not get disconnected signal", disconnectedLatch.await(5, TimeUnit.SECONDS));
         
+        Thread.sleep(50);
+        
         // check the service removes the channel
         assertEquals(0, ((SolaceService)this.solaceEchoService).clients.size());
 
