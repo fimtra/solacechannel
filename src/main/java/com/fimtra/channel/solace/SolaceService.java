@@ -45,7 +45,7 @@ public final class SolaceService implements IEndPointService
      */
     static Topic createEndPointServiceTopic(String node, int port)
     {
-        return SolaceChannelUtils.JCSMP_FACTORY.createTopic("fimtra/" + node + "/" + port);
+        return SolaceChannelUtils.JCSMP_FACTORY.createTopic("clearconnect/" + node + "/" + port);
     }
 
     /**
