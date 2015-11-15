@@ -71,7 +71,7 @@ public final class SolaceChannel implements ITransportChannel, ISubscribingChann
         this.onChannelConnectedCalled = new AtomicBoolean();
         this.onChannelClosedCalled = new AtomicBoolean();
 
-        this.replyTopic = SolaceChannelUtils.JCSMP_FACTORY.createTopic("fimtra/" + UUID.randomUUID().toString());
+        this.replyTopic = SolaceChannelUtils.JCSMP_FACTORY.createTopic("fimtra/clearconnect/" + UUID.randomUUID().toString());
         this.listener = new XMLMessageListener()
         {
             @Override
