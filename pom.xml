@@ -4,7 +4,7 @@
 
 	<groupId>com.fimtra</groupId>
 	<artifactId>solacechannel</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<description>A Solace transport plugin for clearconnect</description>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<packaging>jar</packaging>
